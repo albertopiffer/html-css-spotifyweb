@@ -43,6 +43,7 @@ a {
     --player: #282828;
 
     --font-tr: #848484;
+    --icon-tr: #a3a3a3;
 }
 
 body {
@@ -71,31 +72,31 @@ header {
 .container-header {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
 
-    margin: 20px 0 5px 20px;
+    height: calc(100% - (20px + 5px));
+
+    margin: 20px 20px 5px 20px;
 }
 
 .container-header > img {   /*logo Spotify*/
     width: 130px;
-
-    margin-bottom: 30px; /***************************************************************BRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUH*/
 }
 
-.container-header ul {
+.container-header .s-hsl { /*sidebar-home search library*/
     display: flex;
     flex-direction: column;
     gap: 12px;
 
     font-size: 10px;
-
-    margin-bottom: 30px; /***************************************************************BRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUH*/
 }
 
 .container-header li {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 11px;
 }
 
 .container-header li img {
@@ -106,8 +107,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 15px;
-
-    margin-bottom: 30px; /***************************************************************BRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUH*/
 }
 
 .s-playlist h3 {
@@ -120,16 +119,64 @@ header {
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-
-    color: var(--font-tr);
 }
 
 .s-crea-playlist i {
     font-size: 35px;
+    color: var(--icon-tr);
 }
 
 .s-crea-playlist span {
     font-size: 12px;
+    color: var(--font-tr);
+}
+
+.container-header .s-playlist-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-size: 11px;
+    color: var(--font-tr);
+
+    margin-bottom: auto;
+}
+
+.container-header .install {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--font-tr);
+    font-size: 11px;
+
+    padding: 10px 0;
+    border-bottom: solid 1px var(--font-tr);
+}
+
+.install svg {
+    width: 13px;
+}
+
+.container-header .user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+    font-size: 12px;
+}
+
+.user svg {
+    background-color: var(--icon-tr);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    
+    width: 25px;
+
+    border-radius: 999px;
 }
 
 
