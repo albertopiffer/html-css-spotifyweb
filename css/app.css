@@ -68,6 +68,71 @@ header {
     flex-shrink: 0;
 }
 
+.container-header {
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px 0 5px 20px;
+}
+
+.container-header > img {   /*logo Spotify*/
+    width: 130px;
+
+    margin-bottom: 30px; /***************************************************************BRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUH*/
+}
+
+.container-header ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    font-size: 10px;
+
+    margin-bottom: 30px; /***************************************************************BRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUH*/
+}
+
+.container-header li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-header li img {
+    width: 20px;
+}
+
+.container-header .s-playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-bottom: 30px; /***************************************************************BRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUHBRUH*/
+}
+
+.s-playlist h3 {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.container-header .s-crea-playlist {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--font-tr);
+}
+
+.s-crea-playlist i {
+    font-size: 35px;
+}
+
+.s-crea-playlist span {
+    font-size: 12px;
+}
+
+
 @media only screen and (max-width: 576px) {
 	
     header {
@@ -235,4 +300,18 @@ aside {
     left: 0;
 
     z-index: 1;
+}
+
+
+@media only screen and (max-width: 768px) {
+	
+    .pl-icone {
+        flex-direction: column;
+    }
+
+    .p-left {
+        width: 155px;
+        flex-shrink: 0;
+    }
+
 }
