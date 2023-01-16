@@ -41,6 +41,7 @@ a {
 :root {
 	--view: #141922;
     --player: #282828;
+    --aside-main: #080b12;
 
     --font-tr: #848484;
     --icon-tr: #a3a3a3;
@@ -188,12 +189,37 @@ header {
 
 }
 
-/*VIEW********************************************************************************************/
+/*MAIN********************************************************************************************/
 
 main {
     background-color: var(--view);
     
     flex-grow: 1;
+}
+
+main .m-top-bar {   /*barra superiore main*/
+    height: 90px;
+    background-color: var(--aside-main);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 0 5px;
+}
+
+main .m-top-bar a {
+    text-transform: uppercase;
+
+    line-height: 42px;
+    padding: 0 42px;
+
+    border: 1px solid white;
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
 }
 
 /*PLAYER******************************************************************************************/
