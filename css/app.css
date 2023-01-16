@@ -38,10 +38,15 @@ a {
 	flex-wrap: wrap;
 }
 
+.selected {
+    position: relative;
+}
+
 :root {
 	--view: #141922;
     --player: #282828;
     --aside-main: #080b12;
+    --green: #adff2f;
 
     --font-tr: #848484;
     --icon-tr: #a3a3a3;
@@ -91,6 +96,21 @@ header {
     gap: 12px;
 
     font-size: 10px;
+    color: var(--font-tr);
+}
+
+.s-hsl .selected {
+    color: white;
+}
+
+.s-hsl .selection-mark {
+    position: absolute;
+    left: -20px;
+    top: -7px;
+
+    background-color: var(--green);
+    width: 3px;
+    height: 34px;
 }
 
 .container-header li {
@@ -100,7 +120,7 @@ header {
     gap: 11px;
 }
 
-.container-header li img {
+.container-header li svg {
     width: 20px;
 }
 
@@ -251,6 +271,17 @@ main nav ul {
     justify-content: center;
     gap: 24px;
 }
+
+main nav .selection-mark {
+    position: absolute;
+    left: 23px;
+    bottom: -10px;
+
+    background-color: var(--green);
+    width: 30px;
+    height: 2px;
+}
+
 
 .m-container {
     padding: 24px 20px;
