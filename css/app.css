@@ -424,12 +424,20 @@ aside {
     color: var(--font-tr);
 }
 
+.pl-brano span:hover {
+    text-decoration: underline;
+}
+
 .pl-icone {
     display: flex;
     gap: 14px;
 
     font-size: 14px;
     color: var(--font-tr);
+}
+
+.pl-icone i:hover {
+    color: white;
 }
 
 
