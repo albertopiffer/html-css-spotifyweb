@@ -29,8 +29,6 @@ a {
 	color: currentColor;
 }
 
-/*FONTS*****************************************************************************************/
-
 /*GENERAL*****************************************************************************************/
 
 .row {
@@ -602,7 +600,7 @@ aside {
     position: relative;
 }
 
-.progbar .progbar-progression {
+.p-right .progbar .progbar-progression {
     width: 24px;
     height: 4px;
 
