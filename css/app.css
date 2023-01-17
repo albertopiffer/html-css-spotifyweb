@@ -157,7 +157,7 @@ header {
 }
 
 .s-crea-playlist:hover {
-    color: white !important;
+    color: white !important; /*****************************************************************/
 }
 
 .container-header .s-playlist-list {
@@ -264,7 +264,7 @@ main .m-top-bar a {
 }
 
 main .m-top-bar a:hover {
-    scale: 2;
+    scale: 1.1;
 }
 
 
