@@ -337,7 +337,6 @@ main nav .selection-mark {
 }
 
 .m-container .card img {
-    margin-bottom: 5px;
     width: 177px;
 }
 
@@ -348,6 +347,29 @@ main nav .selection-mark {
 
 .m-container .card h4 {
     max-width: 177px;
+}
+
+.m-hover-pos {
+    position: relative;
+}
+
+.m-hover {
+    position: absolute;
+    left: calc(50% - 15px);
+    top: calc(50% - 15px);
+    
+    font-size: 30px;
+    display: none !important;
+}
+
+
+
+.m-container .card:hover img {
+    opacity: 0.4;
+}
+
+.m-container .card:hover .m-hover {
+    display: block !important;
 }
 
 .popolari img {
