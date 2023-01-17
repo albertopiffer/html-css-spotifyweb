@@ -113,7 +113,7 @@ header {
     height: 34px;
 }
 
-.container-header li {
+.container-header a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -156,8 +156,8 @@ header {
     color: var(--font-tr);
 }
 
-.s-crea-playlist:hover {
-    color: white !important; /*****************************************************************/
+.s-crea-playlist:hover i, .s-crea-playlist:hover span {
+    color: white; 
 }
 
 .container-header .s-playlist-list {
@@ -186,6 +186,10 @@ header {
 
 .install svg {
     width: 13px;
+}
+
+.install:hover svg, .install:hover span {
+    color: white;
 }
 
 .container-header .user {
@@ -427,6 +431,9 @@ aside {
     font-size: 30px;
     padding: 0 10px;
 }
+.p-center .fa-circle-play:hover {
+    scale: 1.2;
+}
 
 .pc-progbar {
     display: flex;
@@ -489,7 +496,7 @@ aside {
     position: relative;
 }
 
-.p-right .progbar-progression {
+.progbar .progbar-progression {
     width: 24px;
     height: 4px;
 
@@ -501,6 +508,24 @@ aside {
     left: 0;
 
     z-index: 1;
+}
+
+.progbar-progression i {
+    position: absolute;
+    font-size: 12px;
+
+    right: 0;
+    top: -50%;
+
+    display: none;
+}
+
+.progbar:hover .progbar-progression {
+    background-color: var(--green);
+}
+
+.progbar:hover .progbar-progression i {
+    display: block;
 }
 
 

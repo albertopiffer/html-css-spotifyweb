@@ -23,25 +23,31 @@
             <ul class="s-hsl">
 
                 <li class="selected">
-                    <div class="selection-mark"></div>
-                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/>
-                    </svg> 
-                    <a href="#">Home</a>
+                    <a href="#">
+                        <div class="selection-mark"></div>
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/>
+                        </svg> 
+                        <span>Home</span>
+                    </a>
                 </li>
 
                 <li>
-                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/>
-                    </svg> 
-                    <a href="#">Cerca</a>
+                    <a href="#">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/>
+                        </svg> 
+                        <span>Cerca</span>
+                    </a>
                 </li>
 
                 <li>
-                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/>
-                    </svg> 
-                    <a href="#">La tua libreria</a>
+                    <a href="#">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/>
+                        </svg> 
+                        <span>La tua libreria</span>
+                    </a>
                 </li>
 
             </ul>
@@ -64,7 +70,7 @@
                 <li><a href="#">Nome Playlist</a></li>
             </ul>
 
-            <div class="install">
+            <a href="#" class="install">
 
                 <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <title>Download icon</title>
@@ -73,7 +79,7 @@
 
                 <span>Installa app</span>
 
-            </div>
+            </a>
 
             <div class="user">
 
@@ -238,7 +244,11 @@
 
             <div class="pc-progbar">
                 <span>0:25</span>
-                <div class="progbar"><div class="progbar-progression"></div></div>
+                <div class="progbar">
+                    <div class="progbar-progression">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                </div>
                 <span>4:35</span>
             </div>
 
@@ -250,7 +260,11 @@
                 <li><i class="fa-solid fa-desktop"></i></li>
                 <li class="pr-volume">
                     <i class="fa-solid fa-volume-high"></i>
-                    <div class="progbar"><div class="progbar-progression"></div></div>
+                    <div class="progbar">
+                        <div class="progbar-progression">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
