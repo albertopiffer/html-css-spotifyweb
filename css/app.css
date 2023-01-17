@@ -120,6 +120,10 @@ header {
     gap: 11px;
 }
 
+.container-header li:hover {
+    color: white;
+}
+
 .container-header li svg {
     width: 20px;
 }
@@ -150,6 +154,10 @@ header {
 .s-crea-playlist span {
     font-size: 12px;
     color: var(--font-tr);
+}
+
+.s-crea-playlist:hover {
+    color: white !important;
 }
 
 .container-header .s-playlist-list {
@@ -255,6 +263,10 @@ main .m-top-bar a {
     color: white;
 }
 
+main .m-top-bar a:hover {
+    scale: 2;
+}
+
 
 main nav {
     width: 100%;
@@ -270,6 +282,10 @@ main nav ul {
     display: flex;
     justify-content: center;
     gap: 24px;
+}
+
+main nav li:hover {
+    color: white;
 }
 
 main nav .selection-mark {
