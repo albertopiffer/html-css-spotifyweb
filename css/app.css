@@ -86,8 +86,13 @@ header {
     margin: 20px 20px 5px 20px;
 }
 
-.container-header > img {   /*logo Spotify*/
+.container-header .logo-l {   /*logo Spotify*/
     width: 130px;
+}
+
+.container-header .logo-s {
+    width: 30px;
+    display: none;
 }
 
 .container-header .s-hsl { /*sidebar-home search library*/
@@ -219,6 +224,42 @@ header {
         width: 50px;
     }
 
+    .container-header {
+        margin: 5px 10px;        
+        gap: 17px;
+    }
+
+    .logo-l {
+        display: none !important;
+    }
+
+    .logo-s {
+        display: block !important;
+    }
+
+    .s-hsl {
+        margin-bottom: auto;
+        align-items: center;
+    }
+
+    li span,
+    .s-playlist,
+    .s-playlist-list,
+    .install span,
+    .user h3
+    {
+        display: none !important;
+    }
+
+    .container-header .install {
+        border-bottom: none;
+        justify-content: center;
+    }
+
+    .container-header .user {
+        justify-content: center;
+    }
+
 }
 
 /*MAIN********************************************************************************************/
@@ -334,10 +375,13 @@ main nav .selection-mark {
     align-items: center;
     justify-content: flex-start;
     gap: 15px;
+
+    flex-basis: 14%;
 }
 
 .m-container .card img {
-    width: 177px;
+    flex-basis: 100%;
+    margin-bottom: 5px;
 }
 
 .m-container .card h3 {
